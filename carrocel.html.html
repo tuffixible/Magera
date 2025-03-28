@@ -8,22 +8,22 @@
         html, body {
             margin: 0;
             padding: 0;
-            overflow: hidden; /* Remove scrollbar do corpo inteiro */
+            overflow: hidden;
             height: 100%;
         }
         .carousel-container {
             width: 100%;
-            height: 100px; /* Altura fixa */
-            overflow-x: hidden; /* Apenas horizontal é controlado pelo carrossel */
-            overflow-y: hidden; /* Sem rolagem vertical */
+            height: 100px;
+            overflow-x: hidden;
+            overflow-y: hidden;
             position: relative;
-            line-height: 0; /* Remove espaçamentos indesejados */
+            line-height: 0;
         }
         .carousel {
             display: flex;
             width: fit-content;
             animation: slide 20s linear infinite;
-            max-height: 100px; /* Garante que não exceda o contêiner */
+            max-height: 100px;
         }
         .carousel img {
             height: 100px;
@@ -37,13 +37,12 @@
         .carousel:hover {
             animation-play-state: paused;
         }
-        /* Oculta scrollbar em todos os navegadores */
         .carousel-container::-webkit-scrollbar, html::-webkit-scrollbar, body::-webkit-scrollbar {
             display: none !important;
         }
         .carousel-container, html, body {
-            -ms-overflow-style: none; /* IE e Edge */
-            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
     </style>
 </head>
