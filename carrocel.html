@@ -1,0 +1,28 @@
+<div style="width: 100%; height: 100px; overflow: hidden; position: relative;">
+  <div style="max-height: 100px; overflow: hidden;">
+    <div style="display: flex; width: fit-content; animation: slide 15s linear infinite;">
+      <img src="https://i.imgur.com/YyM2E5r.jpg" style="height: 100px; margin: 0 20px; display: block;">
+      <img src="https://i.imgur.com/Zd2SkZa.jpg" style="height: 100px; margin: 0 20px; display: block;">
+      <img src="https://i.imgur.com/z4T1HxQ.jpg" style="height: 100px; margin: 0 20px; display: block;">
+      <img src="https://i.imgur.com/HqdPb4a.jpg" style="height: 100px; margin: 0 20px; display: block;">
+      <img src="https://i.imgur.com/tjAq1LS.jpg" style="height: 100px; margin: 0 20px; display: block;">
+      <!-- Duplique as imagens para o loop infinito -->
+      <img src="https://i.imgur.com/YyM2E5r.jpg" style="height: 100px; margin: 0 20px; display: block;">
+      <img src="https://i.imgur.com/Zd2SkZa.jpg" style="height: 100px; margin: 0 20px; display: block;">
+      <img src="https://i.imgur.com/z4T1HxQ.jpg" style="height: 100px; margin: 0 20px; display: block;">
+      <img src="https://i.imgur.com/HqdPb4a.jpg" style="height: 100px; margin: 0 20px; display: block;">
+      <img src="https://i.imgur.com/tjAq1LS.jpg" style="height: 100px; margin: 0 20px; display: block;">
+    </div>
+  </div>
+</div>
+
+<style>
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+div:hover > div { animation-play-state: paused; }
+/* Forçar ocultação da barra de rolagem */
+div::-webkit-scrollbar { display: none !important; }
+div { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
